@@ -1,0 +1,117 @@
+CAMERA_COUNT:	1
+CAMERA:
+{
+	FOV:	45.0 
+	NEAR:	0.5
+	FAR:	100.0
+	POS:	0.0 0.0 10.0
+	ROT:	0.0 0.0 0.0
+}
+
+LIGHT_COUNT: 1
+LIGHT:
+{
+	TYPE:	0
+	POS:	0.0 10.0 20.0
+}
+
+ENVIRONMENT_MAP: 1
+{
+RIGHT: right.tga
+LEFT: left.tga
+TOP: top.tga
+BASE: base.tga
+FRONT: front.tga
+BACK: back.tga
+}
+
+MESH_COUNT: 7
+MESH: Ball.obj
+{
+	NAME:		torus
+	POS:		0.0 0.0 2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	2
+}
+
+MESH: plane.obj
+{
+	NAME:		torus
+	POS:		-4.0 2.0 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.0 0.0 
+	SCALE:		1.0 1.0 1.0
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	0
+}
+
+MESH: Ball.obj
+{
+	NAME:		torus
+	POS:		0.0 2.0 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.2 0.2 0.0 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	4
+}
+
+
+
+MESH: Ball.obj
+{
+	NAME:		torus
+	POS:		1.0 2.0 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.5 0.5 0.5 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	5
+}
+
+
+MESH: torus_multi.obj
+{
+	NAME:		torus02
+	POS:		-3.0 -1.0 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	-0.5 0.5 0.0 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	1
+}
+MESH: skybox.obj
+{
+	NAME:		skybox
+	POS:		0.0 0.0 0.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.0 0.0 0.0 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	6
+}
+
+MESH: Ball.obj
+{
+	NAME:		torus
+	POS:		-1.0 2.0 -2.0
+	ROT:		0.0 0.0 0.0
+	ROT_INCR:	0.5 0.5 0.5 
+	SCALE:		0.5 0.5 0.5
+	VEL:		0.2 0.1 0.0
+	SHADER_ID	3
+}
+
+
+SHADER_COUNT: 7
+SHADER:	shaders/diffuse	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/multi	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/environment	VERT_SHDR	FRAG_SHDR
+SHADER:	shaders/line	VERT_SHDR	FRAG_SHDR  GEOM_SHDR
+SHADER: shaders/tesselationWire VERT_SHDR    CTRL_SHDR    EVAL_SHDR    GEOM_SHDR FRAG_SHDR
+SHADER: shaders/tesselation VERT_SHDR    CTRL_SHDR    EVAL_SHDR    FRAG_SHDR
+SHADER:	shaders/skybox	VERT_SHDR	FRAG_SHDR
+
